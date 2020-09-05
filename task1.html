@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <script type="text/javascript" src="input.js"></script>
+        <style>
+            button{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Input 1:</th>
+                <th>Input 2:</th>
+                <th>Result:</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="inp1"></td>
+                <td><input type="text" id="inp2"></td>
+                <td><input type="text" id="res"></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="clear_input()" id="clearBtn">C</button></td>
+                <td><button type="button" onclick="add()">+</button></td>
+                <td><button type="button" onclick="diff()">-</button></td>
+                <td><button type="button" onclick="div()">/</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="mul()">*</button></td>
+                <td><button type="button" onclick="percentage()">%</button></td>
+                <td><button type="button" onclick="absolute()">abs</button></td>
+                <td><button type="button" onclick="squareRoot()">sqrt</button></td>
+            </tr>
+        </table>
+    </body>
+</html>

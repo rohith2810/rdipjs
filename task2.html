@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validation</title>
+        <script type="text/javascript" src="input.js"></script>
+    </head>
+    <body>
+        <form>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="name" onblur="name_val(this)"></td>
+            </tr>
+            <tr>
+                <td>Phone No</td>
+                <td><input type="text" id="phn" onblur="phn_val(this)" disabled></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" id="email" onblur="email_val(this)" disabled></td>
+            </tr>
+            <tr>
+                <td><input type="submit" id="submitBtn" value="Submit" disabled></td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
