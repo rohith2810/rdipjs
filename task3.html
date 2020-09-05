@@ -3,20 +3,50 @@
     <head>
         <title>Palindrome & Anagram</title>
         <script type="text/javascript" src="input.js"></script>
+        <style>
+            #anaBtn{
+                width: 100%;
+            }
+            input{
+                border: none;
+                border-bottom: 2px solid black;
+            }
+            input:focus{
+                background-color: burlywood;
+            }
+            span{
+                color:red;
+            }
+            button{
+                background-color: burlywood;
+            }
+        </style>
     </head>
     <body>
         <fieldset>
             <legend>Palindrome</legend>
             <input type="text" id="palin_inp">
             <button type="button" onclick="check(this)" id="palinBtn">Check</button><br>
-            <p id="res1"></p>
+            <span id="res1"></span>
         </fieldset>
         <fieldset>
             <legend>Anagram</legend>
-            String of Words: <input type="text" id="word_string"><br>
-            Word:<input type="text" id="word"><br>
-            <button type="button" onclick="check(this)" id="anaBtn">Check</button>
-            <p id="res2"></p>
+            <table>
+                <tr>
+                    <td>String of Words</td>
+                    <td><input type="text" id="word_string"></td>
+                </tr>
+                <tr>
+                    <td>Word</td>
+                    <td><input type="text" id="word"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" onclick="check(this)" id="anaBtn">Check</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span id="res2"></span></td>
+                </tr>
+            </table>    
         </fieldset>
     </body>
 </html>

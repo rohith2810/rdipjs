@@ -134,8 +134,8 @@ function genRandom(){
     var num1=Math.floor(Math.random() * 1001);
     var num2=Math.floor(Math.random() * 1001);
     var str={0:"Human",1:"Cockroach",2:"Nuclear Bomb"},winner;
-    num1=Math.round(num1/500);
-    num2=Math.round(num2/500);
+    num1=num1%3;
+    num2=num2%3;
     document.getElementById("out1").innerHTML="Generated random object is "+num1+" i.e "+str[num1];
     document.getElementById("out2").innerHTML="Generated random object is "+num2+" i.e "+str[num2];
     if((num1==0&&num2==1)||(num1==1&&num2==0))

@@ -7,6 +7,9 @@
             button{
                 width: 100%;
             }
+            table{
+                border:2px solid black;
+            }
         </style>
     </head>
     <body>
@@ -14,18 +17,18 @@
             <tr>
                 <th>Input 1:</th>
                 <th>Input 2:</th>
-                <th>Result:</th>
+                <th colspan="2">Result:</th>
             </tr>
             <tr>
                 <td><input type="text" id="inp1"></td>
                 <td><input type="text" id="inp2"></td>
-                <td><input type="text" id="res"></td>
+                <td colspan="2"><input type="text" id="res"></td>
             </tr>
             <tr>
-                <td><button type="button" onclick="clear_input()" id="clearBtn">C</button></td>
                 <td><button type="button" onclick="add()">+</button></td>
                 <td><button type="button" onclick="diff()">-</button></td>
                 <td><button type="button" onclick="div()">/</button></td>
+                <td><button type="button" onclick="clear_input()" id="clearBtn">C</button></td>
             </tr>
             <tr>
                 <td><button type="button" onclick="mul()">*</button></td>
